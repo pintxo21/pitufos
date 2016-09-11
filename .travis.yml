@@ -1,0 +1,2 @@
+language: java
+mvn -f /golosinasPitufos/pom.xml clean install
