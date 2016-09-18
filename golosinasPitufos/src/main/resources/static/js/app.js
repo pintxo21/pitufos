@@ -33,7 +33,7 @@ taskManagerModule.controller('taskManagerController', function ($scope,$http) {
 
     function findAllProviders() {
         //get all providers and display initially
-        $http.get(urlBase + '/providers/search/findByProviderArchived?archivedfalse=0').
+        $http.get(urlBase + '/providers').
             success(function (data) {
                 if (data._embedded != undefined) {
                     $scope.providers = data._embedded.providers;
