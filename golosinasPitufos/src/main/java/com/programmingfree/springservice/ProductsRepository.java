@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * Created by pin69 on 18-Sep-16.
  */
-public interface ProductsRepository extends CrudRepository<Provider, Integer> {
+public interface ProductsRepository extends CrudRepository<Products, Integer> {
 
-    List<Products> findByProviderArchived();
+    //List<Products> findByProviderArchived();
 }
