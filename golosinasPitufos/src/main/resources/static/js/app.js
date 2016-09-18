@@ -7,29 +7,19 @@ taskManagerModule.controller('taskManagerController', function ($scope,$http) {
 	$scope.selection = [];
 	$http.defaults.headers.post["Content-Type"] = "application/json";
 
-    // function findAllTasks() {
-    //     //get all tasks and display initially
-    //     $http.get(urlBase + '/tasks/search/findByTaskArchived?archivedfalse=0').
-    //         success(function (data) {
-    //             if (data._embedded != undefined) {
-    //                 $scope.tasks = data._embedded.tasks;
-    //             } else {
-    //                 $scope.tasks = [];
-    //             }
-    //             for (var i = 0; i < $scope.tasks.length; i++) {
-    //                 if ($scope.tasks[i].taskStatus == 'COMPLETED') {
-    //                     $scope.selection.push($scope.tasks[i].taskId);
-    //                 }
-    //             }
-    //             $scope.taskName="";
-    //             $scope.taskDesc="";
-    //             $scope.taskPriority="";
-    //             $scope.taskStatus="";
-    //             $scope.toggle='!toggle';
-    //         });
-    // }
+    function findAllProducts() {
+         //get all tasks and display initially
+         $http.get(urlBase + '/productss').
+             success(function (data) {
+                 if (data._embedded != undefined) {
+                     $scope.products = data._embedded.productss;
+                 } else {
+                     $scope.products = [];
+                 }
+             });
+    }
 
-    //findAllTasks();
+    findAllProducts();
 
     function findAllProviders() {
         //get all providers and display initially

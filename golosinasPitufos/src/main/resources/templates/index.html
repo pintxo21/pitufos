@@ -56,8 +56,16 @@
 					<ul class="nav nav-list">
 						<li>
 							<label class="tree-toggler nav-header">Golosinas</label>
-							<ul class="nav nav-list tree" ng-repeat="provider in providers">
-								<li><a href="#">Link</a></li>
+							<ul class="nav nav-list tree" ng-repeat="product in products">
+								<li><label class="tree-toggler nav-header"></label>
+									<ul class="nav nav-list tree">
+										<li><label class="tree-toggler nav-header">{{product.productSubcategory}}</label>
+											<ul class="nav nav-list tree">
+												<li><a href="#">{{product.productNAme}}</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
 							</ul>
 						</li>
 						<li class="divider"></li>
