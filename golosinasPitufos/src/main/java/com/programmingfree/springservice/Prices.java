@@ -15,7 +15,7 @@ public class Prices {
     private int id;
 
     @Column(name="product_name")
-    private String productNAme;
+    private String productName;
 
     @Column(name="provider_name")
     private String providerName;

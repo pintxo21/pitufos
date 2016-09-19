@@ -8,24 +8,24 @@ import javax.persistence.*;
 
 
 @Entity
-@Table(name="products")
+@Table(name = "products")
 public class Products {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name="product_id")
+    @Column(name = "product_id")
     private int id;
 
-    @Column(name="product_category")
+    @Column(name = "product_category")
     private String productCategory;
 
-    @Column(name="product_subcategory")
+    @Column(name = "product_subcategory")
     private String productSubcategory;
 
-    @Column(name="product_name")
-    private String productNAme;
+    @Column(name = "product_name")
+    private String productName;
 
-    @Column(name="product_description")
+    @Column(name = "product_description")
     private String productDescription;
 
     public int getId() {
@@ -52,12 +52,12 @@ public class Products {
         this.productSubcategory = productSubcategory;
     }
 
-    public String getProductNAme() {
-        return productNAme;
+    public String getProductName() {
+        return productName;
     }
 
-    public void setProductNAme(String productNAme) {
-        this.productNAme = productNAme;
+    public void setProductName(String productName) {
+        this.productName = productName;
     }
 
     public String getProductDescription() {
