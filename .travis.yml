@@ -1,2 +1,8 @@
 language: java
 script: mvn -f golosinasPitufos/pom.xml clean install
+
+deploy:
+  provider: s3
+  access_key_id: travisdeploy
+  secret_access_key: 55/RxZQwYtQuYqn2eDa0PsBEYyUeo9n9Tz30LF43
+  bucket: golosinaspitufos
