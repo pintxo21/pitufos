@@ -3,6 +3,6 @@ script: mvn -f golosinasPitufos/pom.xml clean install
 
 deploy:
   provider: s3
-  access_key_id: travisdeploy
-  secret_access_key: AKIAJRHFUAUDDJI6Q6BQ
+  access_key_id: AKIAIT5QP6KDOCISVSTQ
+  secret_access_key: 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
   bucket: golosinaspitufos
